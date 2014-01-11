@@ -20,6 +20,7 @@ import edu.wpi.first.wpilibj.Timer;
 
 public class Natasha2014 extends SimpleRobot {
     
+    // Global constants  
     public static final int PWM_DRIVE_FL = 4;
     public static final int PWM_DRIVE_RL = 3;
     public static final int PWM_DRIVE_FR = 2;
@@ -29,6 +30,9 @@ public class Natasha2014 extends SimpleRobot {
     
     public static final double TIMER_DELAY_SECS = .01;
     
+    // Global variables
+    
+    // Define robot components
     Talon leftForward = new Talon(PWM_DRIVE_FL);
     Talon leftBackward = new Talon(PWM_DRIVE_RL);
     Talon rightForward = new Talon(PWM_DRIVE_FR);
@@ -38,7 +42,9 @@ public class Natasha2014 extends SimpleRobot {
     Joystick leftstick = new Joystick(1);
     Joystick rightstick = new Joystick(2);   
     
-    
+    /**
+     * Robot initialization runs once at startup
+     */ 
     protected void robotInit() {
        chassis.setInvertedMotor(RobotDrive.MotorType.kFrontLeft,true);
        chassis.setInvertedMotor(RobotDrive.MotorType.kRearLeft,true);
@@ -47,6 +53,9 @@ public class Natasha2014 extends SimpleRobot {
 
     }
     
+    /**
+     * Autonomous mode is called once and must exit before 10 sec period expires
+     */
     public void autonomous() {
         
     }
