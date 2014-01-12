@@ -9,12 +9,12 @@
 package edu.wpi.first.wpilibj.templates;
 
 
-//import edu.wpi.first.wpilibj.DigitalInput;
+import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj.SimpleRobot;
 import edu.wpi.first.wpilibj.RobotDrive;
 import edu.wpi.first.wpilibj.Joystick;
-//import edu.wpi.first.wpilibj.Relay;
-//import edu.wpi.first.wpilibj.Solenoid;
+import edu.wpi.first.wpilibj.Relay;
+import edu.wpi.first.wpilibj.Solenoid;
 import edu.wpi.first.wpilibj.Talon;
 import edu.wpi.first.wpilibj.Timer;
 
